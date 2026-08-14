@@ -4,6 +4,12 @@ Rutlink es una aplicación web full stack que permite crear enlaces cortos a par
 
 ---
 
+## Proyecto relacionado
+
+- [Backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend)
+
+---
+
 ## Características principales
 
 - 🔗 **Acortar enlaces**: crea URLs cortas al instante a partir de cualquier enlace largo.
@@ -38,11 +44,6 @@ Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/aco
 
 ---
 
-## Proyecto relacionado
-
-- [Backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend)
-
----
 
 ## 📄 Licencia
 
