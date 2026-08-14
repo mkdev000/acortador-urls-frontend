@@ -51,3 +51,9 @@ Este proyecto está bajo la licencia [MIT](LICENSE).
 ## 👤 Autor
 
 Desarrollado con ❤️ por [Kevin Mecinas](https://github.com/mkdev000)
+
+## 📬 Contacto
+
+- Email: kevin009673@gmail.com
+- LinkedIn: [Kevin Mecinas Jiménez](https://www.linkedin.com/in/kevin-mecinas-jim%C3%A9nez-46860a429/)
+- GitHub: [@mkdev000](https://github.com/mkdev000)
