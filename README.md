@@ -54,6 +54,6 @@ Desarrollado con ❤️ por [Kevin Mecinas](https://github.com/mkdev000)
 
 ## 📬 Contacto
 
-- Email: kevin009673@gmail.com
-- LinkedIn: [Kevin Mecinas Jiménez](https://www.linkedin.com/in/kevin-mecinas-jim%C3%A9nez-46860a429/)
-- GitHub: [@mkdev000](https://github.com/mkdev000)
+- <img src="https://skillicons.dev/icons?i=gmail" width="20" height="20" alt="Email"/> [kevin009673@gmail.com](mailto:kevin009673@gmail.com)
+- <img src="https://skillicons.dev/icons?i=linkedin" width="20" height="20" alt="LinkedIn"/> [Kevin Mecinas Jiménez](https://www.linkedin.com/in/kevin-mecinas-jim%C3%A9nez-46860a429/)
+- <img src="https://skillicons.dev/icons?i=github" width="20" height="20" alt="GitHub"/> [@mkdev000](https://github.com/mkdev000)
