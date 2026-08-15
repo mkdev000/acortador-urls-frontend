@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Formulario from "./components/Formulario";
 import ListaEnlaces from "./components/ListaEnlaces";
+import FondoEstrellas from "./components/FondoEstrellas";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   const [recargar, setRecargar] = useState(0);
@@ -10,8 +13,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 gap-8 px-4 py-12">
-      <h1 className="text-3xl font-bold">Acortador de URLs</h1>
+    <div className="min-h-screen flex flex-col items-center gap-8 px-4 pb-12">
+      <FondoEstrellas />
+      <Navbar />
+      <Hero />
       <Formulario onEnlaceCreado={handleEnlaceCreado} />
       <ListaEnlaces recargar={recargar} />
     </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HiXMark } from "react-icons/hi2";
 
 type Enlace = {
   id: number;
@@ -14,6 +15,7 @@ type ListaEnlacesProps = {
 
 function ListaEnlaces({ recargar }: ListaEnlacesProps) {
   const [enlaces, setEnlaces] = useState<Enlace[]>([]);
+  const [ocultos, setOcultos] = useState<number[]>([]);
 
   useEffect(() => {
     const cargarEnlaces = async () => {
@@ -29,38 +31,50 @@ function ListaEnlaces({ recargar }: ListaEnlacesProps) {
     cargarEnlaces();
   }, [recargar]);
 
-  if (enlaces.length === 0) {
-    return <p className="text-gray-500 text-center">Todavía no has creado ningún enlace.</p>;
+  const ocultarEnlace = (id: number, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setOcultos((prev) => [...prev, id]);
+  };
+
+  const enlacesVisibles = enlaces.filter((enlace) => !ocultos.includes(enlace.id));
+
+  if (enlacesVisibles.length === 0) {
+    return <p className="text-white/40 text-center">Todavía no has creado ningún enlace.</p>;
   }
 
   return (
-    <table className="w-full max-w-2xl border-collapse">
-      <thead>
-        <tr className="border-b border-gray-300 text-left text-sm text-gray-500">
-          <th className="py-2">URL original</th>
-          <th className="py-2">Enlace corto</th>
-          <th className="py-2">Clics</th>
-        </tr>
-      </thead>
-      <tbody>
-        {enlaces.map((enlace) => (
-          <tr key={enlace.id} className="border-b border-gray-100">
-            <td className="py-2 truncate max-w-xs">{enlace.url_original}</td>
-            <td className="py-2">
-              
-                <a href={`http://localhost:3000/${enlace.codigo_corto}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 underline"
-              >
-                {enlace.codigo_corto}
-              </a>
-            </td>
-            <td className="py-2">{enlace.clics}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className="w-full max-w-2xl flex flex-col gap-2">
+      {enlacesVisibles.map((enlace) => (
+
+        <a key={enlace.id}
+          href={`http://localhost:3000/${enlace.codigo_corto}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative flex items-center justify-between bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:bg-white/10 transition-colors"
+        >
+          <button
+            onClick={(e) => ocultarEnlace(enlace.id, e)}
+            className="absolute -top-2.5 -right-2.5 w-6 h-6 flex items-center justify-center rounded-full bg-[#06060d] border border-white/15 text-[#AFA9EC] hover:text-white hover:border-[#7F77DD] hover:bg-[#7F77DD]/20 transition-all opacity-0 group-hover:opacity-100"
+          >
+            <HiXMark size={13} />
+          </button>
+
+          <div className="min-w-0">
+            <p className="text-[#AFA9EC] text-sm font-medium">
+              rutlink.io/{enlace.codigo_corto}
+            </p>
+            <p className="text-white/40 text-xs mt-0.5 truncate max-w-xs">
+              {enlace.url_original}
+            </p>
+          </div>
+          <div className="text-right shrink-0 ml-4">
+            <p className="text-white text-base font-medium">{enlace.clics}</p>
+            <p className="text-white/35 text-[10px]">clics</p>
+          </div>
+        </a>
+      ))}
+    </div>
   );
 }
 
