@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# 🔗 Rutlink — Acortador de URLs (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rutlink es una aplicación web full stack que permite crear enlaces cortos a partir de URLs largas y hacer seguimiento de sus estadísticas de clics en tiempo real. Pensada para ser rápida, sencilla y sin necesidad de registro.
 
-Currently, two official plugins are available:
+🔗 Repositorio del backend: [acortador-urls-backend](https://github.com/mkdev000/acortador-urls-backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Características principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔗 **Acortar enlaces**: crea URLs cortas al instante a partir de cualquier enlace largo.
+- 📋 **Copia rápida**: copia el enlace corto al portapapeles con un solo clic.
+- 📊 **Estadísticas en tiempo real**: consulta los clics de cada enlace desde el listado, sin recargar la página.
+- ➡️ **Redirección automática**: los enlaces cortos redirigen a la URL original al instante.
+- 🎯 **Sin registro**: no hace falta crear cuenta para usarlo.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologías utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Frontend**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- <img src="https://skillicons.dev/icons?i=react" width="20" height="20" alt="React"/> **React** – Librería para construir toda la interfaz mediante componentes.
+- <img src="https://skillicons.dev/icons?i=ts" width="20" height="20" alt="TypeScript"/> **TypeScript** – Tipado estático para el formulario, la lista de enlaces y las props entre componentes.
+- <img src="https://skillicons.dev/icons?i=tailwind" width="20" height="20" alt="Tailwind CSS"/> **Tailwind CSS** – Estilos de toda la interfaz, incluido el diseño del fondo animado.
+- <img src="https://skillicons.dev/icons?i=vite" width="20" height="20" alt="Vite"/> **Vite** – Empaquetado y servidor de desarrollo del proyecto.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## Instalación local
+
+```bash
+git clone https://github.com/mkdev000/acortador-urls-frontend.git
+cd acortador-urls-frontend
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend) en `http://localhost:3000` para funcionar correctamente.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Proyecto relacionado
 
-```
+- [Backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+
+## 👤 Autor
+
+Desarrollado con ❤️ por [Kevin Mecinas](https://github.com/mkdev000)
+
+---
+
+## 📬 Contacto
+
+- <img src="https://skillicons.dev/icons?i=gmail" width="20" height="20" alt="Email"/> [kevin009673@gmail.com](mailto:kevin009673@gmail.com)
+- <img src="https://skillicons.dev/icons?i=linkedin" width="20" height="20" alt="LinkedIn"/> [Kevin Mecinas Jiménez](https://www.linkedin.com/in/kevin-mecinas-jim%C3%A9nez-46860a429/)
+- <img src="https://skillicons.dev/icons?i=github" width="20" height="20" alt="GitHub"/> [@mkdev000](https://github.com/mkdev000)
