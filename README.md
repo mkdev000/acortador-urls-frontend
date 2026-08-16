@@ -8,11 +8,11 @@ Rutlink es una aplicación web full stack que permite crear enlaces cortos a par
 
 ## Características principales
 
-- 🔗 **Acortar enlaces**: Crea URLs cortas al instante a partir de cualquier enlace largo.
-- 📋 **Copia rápida**: Copia el enlace corto al portapapeles con un solo clic.
-- 📊 **Estadísticas en tiempo real**: Consulta los clics de cada enlace desde el listado, sin recargar la página.
-- ➡️ **Redirección automática**: Los enlaces cortos redirigen a la URL original al instante.
-- 🎯 **Sin registro**: No hace falta crear cuenta para usarlo.
+- 🔗 **Acortar enlaces**: crea URLs cortas al instante a partir de cualquier enlace largo.
+- 📋 **Copia rápida**: copia el enlace corto al portapapeles con un solo clic.
+- 📊 **Estadísticas en tiempo real**: consulta los clics de cada enlace desde el listado, sin recargar la página.
+- ➡️ **Redirección automática**: los enlaces cortos redirigen a la URL original al instante.
+- 🎯 **Sin registro**: no hace falta crear cuenta para usarlo.
 
 ---
 
@@ -37,6 +37,35 @@ npm run dev
 ```
 
 Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend) en `http://localhost:3000` para funcionar correctamente.
+
+---
+
+## 🚀 Despliegue
+
+- **Frontend**: desplegado en [Vercel](https://vercel.com)
+- **Demo en vivo**: [https://rutlink.vercel.app](https://rutlink.vercel.app)
+- **Backend**: [https://rutlink-backend.onrender.com](https://rutlink-backend.onrender.com)
+
+---
+
+## 📁 Estructura del proyecto
+
+frontend/
+├── public/
+│ └── favicon.svg
+├── src/
+│ ├── components/
+│ │ ├── Formulario.tsx # Formulario para acortar URLs
+│ │ ├── ListaEnlaces.tsx # Lista de enlaces con estadísticas
+│ │ ├── Navbar.tsx # Barra de navegación
+│ │ ├── Hero.tsx # Sección principal con el título
+│ │ └── FondoEstrellas.tsx # Fondo animado con canvas
+│ ├── App.tsx
+│ ├── main.tsx
+│ └── index.css
+├── index.html
+└── package.json
+
 
 ---
 
