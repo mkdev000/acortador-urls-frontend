@@ -20,7 +20,7 @@ function ListaEnlaces({ recargar }: ListaEnlacesProps) {
   useEffect(() => {
     const cargarEnlaces = async () => {
       try {
-        const respuesta = await fetch("http://localhost:3000/api/enlaces");
+        const respuesta = await fetch("https://rutlink-backend.onrender.com/api/enlaces");
         const datos = await respuesta.json();
         setEnlaces(datos);
       } catch (error) {
@@ -48,7 +48,7 @@ function ListaEnlaces({ recargar }: ListaEnlacesProps) {
       {enlacesVisibles.map((enlace) => (
 
         <a key={enlace.id}
-          href={`http://localhost:3000/${enlace.codigo_corto}`}
+          href={`https://rutlink-backend.onrender.com/${enlace.codigo_corto}`}
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex items-center justify-between bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:bg-white/10 transition-colors"
