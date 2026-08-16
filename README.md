@@ -8,11 +8,11 @@ Rutlink es una aplicación web full stack que permite crear enlaces cortos a par
 
 ## Características principales
 
-- 🔗 **Acortar enlaces**: crea URLs cortas al instante a partir de cualquier enlace largo.
-- 📋 **Copia rápida**: copia el enlace corto al portapapeles con un solo clic.
-- 📊 **Estadísticas en tiempo real**: consulta los clics de cada enlace desde el listado, sin recargar la página.
-- ➡️ **Redirección automática**: los enlaces cortos redirigen a la URL original al instante.
-- 🎯 **Sin registro**: no hace falta crear cuenta para usarlo.
+- 🔗 **Acortar enlaces**: Crea URLs cortas al instante a partir de cualquier enlace largo.
+- 📋 **Copia rápida**: Copia el enlace corto al portapapeles con un solo clic.
+- 📊 **Estadísticas en tiempo real**: Consulta los clics de cada enlace desde el listado, sin recargar la página.
+- ➡️ **Redirección automática**: Los enlaces cortos redirigen a la URL original al instante.
+- 🎯 **Sin registro**: No hace falta crear cuenta para usarlo.
 
 ---
 
