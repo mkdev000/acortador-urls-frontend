@@ -50,6 +50,7 @@ Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/aco
 
 ## 📁 Estructura del proyecto
 
+```
 frontend/
 ├── public/
 │   └── favicon.svg
@@ -65,7 +66,7 @@ frontend/
 │   └── index.css
 ├── index.html
 └── package.json
-
+```
 
 ---
 
