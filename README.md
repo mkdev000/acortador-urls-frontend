@@ -42,7 +42,7 @@ Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/aco
 
 ## 🚀 Despliegue
 
-- **Frontend**: desplegado en [Vercel](https://vercel.com)
+- **Frontend**: Desplegado en [Vercel](https://vercel.com)
 - **Demo en vivo**: [https://rutlink.vercel.app](https://rutlink.vercel.app)
 - **Backend**: [https://rutlink-backend.onrender.com](https://rutlink-backend.onrender.com)
 
