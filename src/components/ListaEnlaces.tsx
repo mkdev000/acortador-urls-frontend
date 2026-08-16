@@ -55,7 +55,7 @@ function ListaEnlaces({ recargar }: ListaEnlacesProps) {
         >
           <button
             onClick={(e) => ocultarEnlace(enlace.id, e)}
-            className="absolute -top-2.5 -right-2.5 w-6 h-6 flex items-center justify-center rounded-full bg-[#06060d] border border-white/15 text-[#AFA9EC] hover:text-white hover:border-[#7F77DD] hover:bg-[#7F77DD]/20 transition-all opacity-0 group-hover:opacity-100"
+           className="absolute -top-2.5 -right-2.5 w-6 h-6 flex items-center justify-center rounded-full bg-[#06060d] border border-white/15 text-[#AFA9EC] hover:text-white hover:border-[#7F77DD] hover:bg-[#7F77DD]/20 transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
           >
             <HiXMark size={13} />
           </button>
