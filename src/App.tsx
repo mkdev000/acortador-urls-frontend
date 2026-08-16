@@ -19,6 +19,14 @@ function App() {
       <Hero />
       <Formulario onEnlaceCreado={handleEnlaceCreado} />
       <ListaEnlaces recargar={recargar} />
+      
+        <a href="https://github.com/mkdev000"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-4 left-4 text-[#7F77DD]/60 hover:text-[#7F77DD] text-xs transition-colors"
+>
+  Creado por Kevin Mecinas.
+</a>
     </div>
   );
 }
