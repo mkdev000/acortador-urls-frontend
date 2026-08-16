@@ -52,17 +52,17 @@ Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/aco
 
 frontend/
 ├── public/
-│ └── favicon.svg
+│   └── favicon.svg
 ├── src/
-│ ├── components/
-│ │ ├── Formulario.tsx # Formulario para acortar URLs
-│ │ ├── ListaEnlaces.tsx # Lista de enlaces con estadísticas
-│ │ ├── Navbar.tsx # Barra de navegación
-│ │ ├── Hero.tsx # Sección principal con el título
-│ │ └── FondoEstrellas.tsx # Fondo animado con canvas
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── index.css
+│   ├── components/
+│   │   ├── Formulario.tsx      # Formulario para acortar URLs
+│   │   ├── ListaEnlaces.tsx    # Lista de enlaces con estadísticas
+│   │   ├── Navbar.tsx          # Barra de navegación
+│   │   ├── Hero.tsx            # Sección principal con el título
+│   │   └── FondoEstrellas.tsx  # Fondo animado con canvas
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
 ├── index.html
 └── package.json
 
