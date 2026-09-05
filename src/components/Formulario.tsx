@@ -13,7 +13,7 @@ function Formulario({ onEnlaceCreado }: FormularioProps) {
     e.preventDefault();
 
     try {
-      const respuesta = await fetch("https://rutlink-backend.onrender.com/api/enlaces", {
+      const respuesta = await fetch("https://backend-consolidado.onrender.com/api/enlaces", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
