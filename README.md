@@ -40,6 +40,36 @@ Necesita tener corriendo el [backend de Rutlink](https://github.com/mkdev000/aco
 
 ---
 
+## 🚀 Despliegue
+
+- **Frontend**: Desplegado en [Vercel](https://vercel.com)
+- **Demo en vivo**: [https://rutlink.vercel.app](https://rutlink.vercel.app)
+- **Backend**: [https://rutlink-backend.onrender.com](https://rutlink-backend.onrender.com)
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+frontend/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── Formulario.tsx      # Formulario para acortar URLs
+│   │   ├── ListaEnlaces.tsx    # Lista de enlaces con estadísticas
+│   │   ├── Navbar.tsx          # Barra de navegación
+│   │   ├── Hero.tsx            # Sección principal con el título
+│   │   └── FondoEstrellas.tsx  # Fondo animado con canvas
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+└── package.json
+```
+
+---
+
 ## Proyecto relacionado
 
 - [Backend de Rutlink](https://github.com/mkdev000/acortador-urls-backend)
